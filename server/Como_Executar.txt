@@ -1,0 +1,2 @@
+Após o NodeJS instalado.
+Executee node server.js no terminal de comandos do sistema operacional.
