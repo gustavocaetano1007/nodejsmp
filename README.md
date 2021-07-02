@@ -1,5 +1,9 @@
 # nodejsmp
-Compilação do cliente na ferramenta Unity3D
+
+Sistema simples de simulação em realidade aumentada com suporte para multiplayer. Utilizamos Nodejs para o suporte multiplayer e Unity3D, Vuforia para o ambiente de realidade aumentada. 
+
+Compilação do cliente na ferramenta Unity3D:
+
 a) Para o reconhecimento do servidor pelo cliente instalado no celular, é necessário abrir o
 código fonte pelo Unity3D e informar o IP do servidor na opção Url, do grupo Socket IO
 Component. Esse grupo é visualizado após selecionar a Network.cs, da pasta Assets.
