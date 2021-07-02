@@ -1,6 +1,42 @@
 # nodejsmp
-
-Sistema simples de simulação em realidade aumentada com suporte para multiplayer. Utilizamos Nodejs para o suporte multiplayer e Unity3D, Vuforia para o ambiente de realidade aumentada. 
+O crescente mercado de jogos para computador, consoles, smartphones, e o surgimento
+de novas mecânicas de jogos (multijogadores) tem crescido e popularizado a utilização
+de tecnologias que possibilitam a comunicação cliente-servidor de forma eficiente e com
+menor custo. A disponibilidade de ambientes de desenvolvimento que possibilitam a
+exportação do código fonte para várias plataformas têm facilitado o desenvolvimento de
+jogos para uma ampla variedade de dispositivos. Com isso, se destaca o ambiente de
+desenvolvido da Unity3D, pois além de prover uma licença pessoal gratuita para
+usuários que não faturam mais que $100.000 dólares, dispõe de uma ampla variedade de
+dispositivos compatíveis para exportação.
+A quantidade de jogadores em um servidor varia de 2 a 100 jogadores
+simultâneos como nos jogos “Ark Survival Evolved” e “Call of Duty”. Isso é um limite
+imposto pela capacidade de tratar várias requisições simultâneas no mesmo servidor.
+Além disso, engines limitam ou cobram uma taxa para a utilização do recurso
+multijogador. A Unity3D, por exemplo, limita em 8 usuários simultâneos em um jogo
+multijogador utilizando a licença gratuita. A utilização de tecnologias escaláveis que
+utilizam “melhor” os recursos no servidor bem como disponibilizam um acesso fácil
+para desenvolvedores com pouco recurso financeiro, abrem a possibilidade de aumentar
+a quantidade de jogadores, diminuindo o custo de aquisições de vários servidores
+juntamente com licenças e aumento da quantidade de interações em jogos multijogador
+em tempo real.
+As linguagens de programação como Java, PHP e C, trabalham com a criação de
+um thread para cada requisição e consecutivamente aumenta a utilização de recursos da
+memória física do servidor fazendo com que diminua a quantidade de conexões
+simultâneas suportadas. A maioria das linguagens tem comportamento bloqueante no 
+thread em que estão, ou seja, se um cliente faz uma consulta pesada no banco de dados,
+a thread utilizada fica travada até essa consulta terminar.
+Com a necessidade de criar uma solução que gerencia melhor múltiplas
+conexões com o servidor, foi desenvolvido o interpretador em JavaScript NodeJS que
+funciona no lado do servidor. O NodeJS é fundamentado no interpretador de código
+aberto criado pela Google V8 JavaScript Engine e baseado em C++ que funciona no
+navegador Chrome; foi criado por Ryan Dahl em 2009 e seu desenvolvimento é mantido
+pela empresa Joyent. Por ter licença de código aberto, possibilita uma grande economia
+no requisito licença.
+NodeJS é um recurso excelente para interações ao vivo em um site ou programa
+que possui muitas solicitações de entrada e retorno de dados, pois é orientado a eventos
+não síncrono e não bloqueante ininterruptamente beneficiando as requisições de dados
+de entrada e saída no servidor. Nisso, sua utilização em um servidor de jogos pode
+aumentar o desempenho e um número maior de requisições em um único servidor.
 
 Compilação do cliente na ferramenta Unity3D:
 
